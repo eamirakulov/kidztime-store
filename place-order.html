@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add to cart</title>
+	<meta name="viewport" content="initial-scale=1">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="js/magnific_popup/magnific-popup.css">
+	<script src="js/magnific_popup/jquery.magnific-popup.js"></script>
+	<link rel="stylesheet" href="js/slick/slick.css">
+	<script src="js/slick/slick.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="place-order">
+	<header>
+		<a href="#" class="toggle-mobile"><img src="img/hamburger.svg"></a>
+		<div class="container">
+			<div class="row flex">
+				<div class="col-sm-2">
+					<a href="#" class="logo"><img src="img/logo.svg"></a>
+				</div>
+				<div class="col-sm-8">
+					<ul class="main-menu">
+						<li><a href="#">Bag to School</a></li>
+						<li><a href="#">Dinnerwares</a></li>
+						<li><a href="#">Watter Bottles</a></li>
+						<li><a href="#">School Accessories</a></li>
+						<li><a href="#">Plush & Toys</a></li>
+						<li class="has-children">
+							<a href="#">Characters</a>
+							<ul>
+								<li>
+									<a href=""><img src="img/avengers.png">Avengers</a>
+								</li>
+								<li>
+									<a href=""><img src="img/avengers.png">Avengers</a>
+								</li>
+								<li>
+									<a href=""><img src="img/avengers.png">Avengers</a>
+								</li>
+								<li>
+									<a href=""><img src="img/avengers.png">Avengers</a>
+								</li>
+								<li>
+									<a href=""><img src="img/avengers.png">Avengers</a>
+								</li>
+								<li>
+									<a href=""><img src="img/avengers.png">Avengers</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-2 user-items">
+					<a href="#" class="search"><img src="img/magnifier.svg"></a>
+					<span class="cart">
+						<img src="img/carticon.svg"> 2
+						<div class="cart-modal">
+							<div class="inner">
+								<div class="item">
+									<div class="row">
+										<div class="col-sm-6 img">
+											<div><img src="img/product.png"></div>
+										</div>
+										<div class="col-sm-6 details">
+											<h3>Avengers Backpack</h3>
+											<div class="row">
+												<div class="col-sm-6">Price:</div>
+												<div class="col-sm-6 text-right">$ 7.80</div>
+											</div>
+											<div class="row">
+												<div class="col-sm-6">Qty:</div>
+												<div class="col-sm-6 text-right">2</div>
+											</div>
+											<div class="row">
+												<div class="col-sm-6">Subtotal:</div>
+												<div class="col-sm-6 text-right">$ 15.6</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="row">
+										<div class="col-sm-6 img">
+											<div><img src="img/product.png"></div>
+										</div>
+										<div class="col-sm-6 details">
+											<h3>Avengers Backpack</h3>
+											<div class="row">
+												<div class="col-sm-6">Price:</div>
+												<div class="col-sm-6 text-right">$ 7.80</div>
+											</div>
+											<div class="row">
+												<div class="col-sm-6">Qty:</div>
+												<div class="col-sm-6 text-right">2</div>
+											</div>
+											<div class="row">
+												<div class="col-sm-6">Subtotal:</div>
+												<div class="col-sm-6 text-right">$ 15.6</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="row">
+										<div class="col-sm-6 img">
+											<div><img src="img/product.png"></div>
+										</div>
+										<div class="col-sm-6 details">
+											<h3>Avengers Backpack</h3>
+											<div class="row">
+												<div class="col-sm-6">Price:</div>
+												<div class="col-sm-6 text-right">$ 7.80</div>
+											</div>
+											<div class="row">
+												<div class="col-sm-6">Qty:</div>
+												<div class="col-sm-6 text-right">2</div>
+											</div>
+											<div class="row">
+												<div class="col-sm-6">Subtotal:</div>
+												<div class="col-sm-6 text-right">$ 15.6</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="free-shipping"><img src="img/freeshipping.png"></div>
+
+							<div class="inner">
+								<div class="subtotal row flex">
+									<div class="col-sm-7">Card Subtotal (3 items):</div>
+									<div class="col-sm-5 text-right">$30</div>
+								</div>
+
+								<div class="actions">
+									<a href="#" class="view-cart">View Cart</a>
+									or
+									<a href="#" class="checkout">Checkout</a>
+								</div>
+							</div>
+						</div>
+					</span>
+					<a href="#" class="profile">Lucy <img src="img/ava.png"></a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<h2 class="page-title"><a href="/"><img src="img/back.svg"> Place Order</a></h2>
+
+			<div class="purchase-details">
+				<h3>Shipping Details</h3>
+
+				<div class="row">
+					<div class="col-sm-8 shipping-details">
+						<form>
+							<div class="row">
+								<div class="col-sm-6">
+									<label>
+										<span>First name</span>
+										<input type="text" name="">
+									</label>
+								</div>
+								<div class="col-sm-6">
+									<label>
+										<span>E-mail</span>
+										<input type="text" name="">
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6">
+									<label>
+										<span>Last name</span>
+										<input type="text" name="">
+									</label>
+								</div>
+								<div class="col-sm-6">
+									<label>
+										<span>Delivery Address</span>
+										<input type="text" name="">
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6">
+									<label>
+										<span>Phone Number</span>
+										<input type="text" name="">
+									</label>
+								</div>
+								<div class="col-sm-6">
+									<label>
+										<span>Postal Code</span>
+										<input type="text" name="">
+									</label>
+								</div>
+							</div>
+							<label>
+								<span>Notes to seller</span>
+								<textarea>
+									
+								</textarea>
+							</label>
+
+							<div class="payment-details">
+								<h3>Payment Details</h3>
+
+								<div class="row">
+									<div class="col-sm-6">
+										<label>
+											<span>Name on card</span>
+											<input type="text" name="">
+										</label>
+										<label>
+											<span>Card number</span>
+											<input type="text" name="">
+										</label>
+										<label>
+											<span>Expiry MM/YYYY</span>
+											<input type="text" name="">
+										</label>
+										<label>
+											<span>CVC</span>
+											<input type="text" name="">
+										</label>
+										<label>
+											<span>Primary billing address</span>
+											<textarea></textarea>
+										</label>
+									</div>
+
+									<div class="col-sm-6 text-right card">
+										<img src="img/card.png" class="hidden-xs">
+
+										<div><a href="#" class="white-btn">Change saved card</a></div>
+									</div>
+								</div>
+							</div>
+						</form>
+
+					</div>
+
+					<div class="col-sm-4 summary">
+						<div class="inner">
+							<h3>Cart Summary</h3>
+							<div class="total-cost row">
+								<div class="col-xs-6">
+									Total Cost:
+								</div>
+								<div class="col-xs-6 text-right">
+									$ 100
+								</div>
+							</div>
+
+							<div class="shipping-box">
+								<div class="ship-item">
+									<input type="radio" name="shipping_method" id="ship1" checked>
+								    <label for="ship1">Standard Shipping</label><br>
+								    <small>3-4 Working days</small>
+								</div>
+								<div class="ship-item">
+									<input type="radio" name="shipping_method" id="ship2">
+								    <label for="ship2">Free Shipping</label><br>
+								    <small>Free over SGD30</small>
+								</div>
+								<div class="ship-item">
+									<input type="radio" name="shipping_method" id="ship3">
+								    <label for="ship3">Self Collection (Free)</label><br>
+								    <small>159 Sin Ming Rd,
+									#03-01 Amtech Building 575625, Mon to Fri, 10:00 am - 5:30 pm</small>
+								</div>
+							</div>
+
+							<div class="fee row">
+								<div class="col-xs-6">
+									Shipping Fee:
+								</div>
+								<div class="col-xs-6 text-right">
+									$ 0
+								</div>
+							</div>
+							<div class="total row">
+								<div class="col-xs-6">
+									Total:
+								</div>
+								<div class="col-xs-6 text-right">
+									$ 100
+								</div>
+							</div>
+
+							<a href="#" class="checkout-btn">Place Order</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="carousel-wrap">
+			<div class="tag">@kidztime</div>
+			<div class="img-feed">
+				<div class="item">
+					<img src="img/footerimg1.png">
+				</div>
+				<div class="item">
+					<img src="img/footerimg2.png">
+				</div>
+				<div class="item">
+					<img src="img/footerimg1.png">
+				</div>
+				<div class="item">
+					<img src="img/footerimg2.png">
+				</div>
+				<div class="item">
+					<img src="img/footerimg1.png">
+				</div>
+				<div class="item">
+					<img src="img/footerimg2.png">
+				</div>
+				<div class="item">
+					<img src="img/footerimg1.png">
+				</div>
+				<div class="item">
+					<img src="img/footerimg2.png">
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-items">
+			<div class="container">
+				<div class="row equal-height">
+					<div class="item col-sm-3">
+						<div><img src="img/footer-item1.svg"></div>
+						<h3>Get latest news and special offers</h3>
+						<p>Sing up with Kidztime. Get $3 off your first purchase</p>
+						<div class="signup-form">
+							<input type="text" placeholder="your e-mail" name="email"><button>Subscribe</button>
+						</div>
+					</div>
+					<div class="item col-sm-3">
+						<div><img src="img/footer-item2.svg"></div>
+						<h3>Buy more. Save more </h3>
+						<p>Buying in bulk? 30% off above 10 item in a single purchase.</p>
+						<a href="#">Get started</a>
+					</div>
+					<div class="item col-sm-3">
+						<div><img src="img/footer-item3.svg"></div>
+						<h3>Refer a friend</h3>
+						<p>Give $5 off. Get $5 off. Like our stuff? Tell your friends too!</p>
+						<a href="#">START REFERRING</a>
+					</div>
+					<div class="item col-sm-3">
+						<div><img src="img/footer-item4.svg"></div>
+						<h3>Kidztime Straw Replacement</h3>
+						<p>Get your replacement straws for Kidztime Bottles</p>
+						<a href="#">REPLACE NOW</a>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="mobile-footer visible-xs">
+					<div class="block">
+						<a href="#">Account</a>
+						<a href="#">Help</a>
+						<a href="#">Contact Us</a>
+						<a href="#">The Kidztime Brand</a>
+						<a href="#">Our Brand</a>
+					</div>
+					<div class="block">
+						<a href="#">E-Store Fronts</a>
+						<div class="flags">
+							<a href="#"><img src="img/flag1.svg"></a>
+							<a href="#"><img src="img/flag2.svg"></a>
+						</div>
+					</div>
+					<div class="block">
+						<a href="#">Connect with us</a>
+						<div class="social">
+							<a href="#"><img src="img/fb.svg"></a>
+							<a href="#"><img src="img/inst.svg"></a>
+						</div>
+					</div>
+				</div>
+				<div class="row hidden-xs">
+					<div class="col-sm-3">
+						<div class="inner">
+							<img src="img/logo-footer.svg" class="logo">
+							<h3>Account</h3>
+							<a href="#">Past Orders</a>
+							<a href="#">Settings</a>
+							<a href="#">Payments</a>
+							<a href="#">Referrral</a>
+							<h3>Help</h3>
+							<a href="#">Shipping</a>
+							<a href="#">Returns</a>
+							<a href="#">FAQ</a>
+							<h3>Contact Us</h3>
+							<a href="tel:65 6553 3133">65 6553 3133</a>
+							<a href="#" class="emailus">Email Us</a>
+						</div>
+					</div>
+					<div class="col-sm-3 col">
+						<h3>The Kidztime Brand</h3>
+						<img src="img/footerbrandimg.png">
+
+						<h3>About Us</h3>
+						<a href="#">Brand Story</a>
+						<a href="#">Find us in retail</a>
+
+						<h3>Connect with us</h3>
+						<div class="social">
+							<a href="#"><img src="img/fb.svg"></a>
+							<a href="#"><img src="img/inst.svg"></a>
+						</div>
+						<h3>Find products</h3>
+						<div class="search-form">
+							<input type="text" name="search"><input type="submit" name="submit">
+						</div>
+					</div>
+					<div class="col-sm-3 col">
+						<h3>Our Brand</h3>
+						<a href="#">Spiderman</a>
+						<a href="#">Avengers</a>
+						<a href="#">Paw Patrol</a>
+						<a href="#">Shimmer and Shine</a>
+						<a href="#">PJ Mask</a>
+						<a href="#">Shopkins &Shoppies</a>
+						<a href="#">Pink Fong</a>
+
+						<h3>Hot deals</h3>
+						<a href="#">New arrivals</a>
+						<a href="#">Christmas deals</a>
+						<a href="#">Clearance</a>
+					</div>
+					<div class="col-sm-3 col">
+						<h3>Shop with us</h3>
+						<a href="#">School Bags</a>
+						<a href="#">Stationery</a>
+						<a href="#">Houseware & Tablewares</a>
+						<a href="#">Water Bottles</a>
+
+						<h3>Featured Products</h3>
+						<a href="#">Party Picks</a>
+						<a href="#">Outdoor Fun</a>
+						<a href="#">Craft & Classes</a>
+
+						<h3>E-Store Fronts</h3>
+						<div class="flags">
+							<a href="#"><img src="img/flag1.svg"></a>
+							<a href="#"><img src="img/flag2.svg"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+<script src="js/main.js"></script>
+</html>

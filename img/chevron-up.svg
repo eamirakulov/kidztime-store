@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="5px" viewBox="0 0 8 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Triangle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dropdown-Character" transform="translate(-223.000000, -27.000000)" fill="#BDBDBD">
+            <g id="Collum-card">
+                <g>
+                    <g id="Group-6">
+                        <g id="Group-5" transform="translate(108.000000, 18.000000)">
+                            <path d="M119.707107,9.70710678 L122.292893,12.2928932 C122.683418,12.6834175 122.683418,13.3165825 122.292893,13.7071068 C122.105357,13.8946432 121.851003,14 121.585786,14 L116.414214,14 C115.861929,14 115.414214,13.5522847 115.414214,13 C115.414214,12.7347835 115.51957,12.4804296 115.707107,12.2928932 L118.292893,9.70710678 C118.683418,9.31658249 119.316582,9.31658249 119.707107,9.70710678 Z" id="Triangle" transform="translate(119.000000, 11.500000) rotate(-360.000000) translate(-119.000000, -11.500000) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

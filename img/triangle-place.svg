@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="9px" viewBox="0 0 14 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Triangle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mob_Place-Order" transform="translate(-333.000000, -884.000000)" fill="#5E5896">
+            <g id="Group-4-Copy" transform="translate(16.000000, 871.000000)">
+                <path d="M324.747409,13.8408355 L330.520565,20.3356362 C330.887483,20.7484189 330.850303,21.3804913 330.43752,21.7474093 C330.254469,21.9101214 330.01807,22 329.773156,22 L318.226844,22 C317.674559,22 317.226844,21.5522847 317.226844,21 C317.226844,20.7550858 317.316722,20.5186873 317.479435,20.3356362 L323.252591,13.8408355 C323.619509,13.4280527 324.251581,13.390872 324.664364,13.75779 C324.693649,13.783821 324.721378,13.8115506 324.747409,13.8408355 Z" id="Triangle" transform="translate(324.000000, 17.500000) rotate(-180.000000) translate(-324.000000, -17.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

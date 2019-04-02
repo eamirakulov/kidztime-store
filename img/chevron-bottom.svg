@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="5px" viewBox="0 0 8 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Triangle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Header/darck" transform="translate(-1277.000000, -32.000000)" fill="#FFFFFF">
+            <g id="Group-2" transform="translate(354.000000, 13.000000)">
+                <g id="Group" transform="translate(809.000000, 4.000000)">
+                    <path d="M118.707107,15.7071068 L121.292893,18.2928932 C121.683418,18.6834175 121.683418,19.3165825 121.292893,19.7071068 C121.105357,19.8946432 120.851003,20 120.585786,20 L115.414214,20 C114.861929,20 114.414214,19.5522847 114.414214,19 C114.414214,18.7347835 114.51957,18.4804296 114.707107,18.2928932 L117.292893,15.7071068 C117.683418,15.3165825 118.316582,15.3165825 118.707107,15.7071068 Z" id="Triangle" transform="translate(118.000000, 17.500000) rotate(-180.000000) translate(-118.000000, -17.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,1386 @@
+@font-face
+	font-family: 'Affogato-Black'
+	src: url('fonts/Affogato-Black.eot')
+	src: url('fonts/Affogato-Black.eot?#iefix') format("embedded-opentype"), url('fonts/Affogato-Black.woff') format("woff"), url('fonts/Affogato-Black.woff2') format("woff2"), url('fonts/Affogato-Black.ttf') format("truetype"), url('fonts/Affogato-Black.svg') format("svg")
+	font-weight: normal
+	font-style: normal
+
+
+@font-face
+	font-family: 'Affogato-Bold'
+	src: url('fonts/Affogato-Bold.eot')
+	src: url('fonts/Affogato-Bold.eot?#iefix') format("embedded-opentype"), url('fonts/Affogato-Bold.woff') format("woff"), url('fonts/Affogato-Bold.woff2') format("woff2"), url('fonts/Affogato-Bold.ttf') format("truetype"), url('fonts/Affogato-Bold.svg') format("svg")
+	font-weight: normal
+	font-style: normal
+
+
+@font-face
+	font-family: 'Affogato-Medium'
+	src: url('fonts/Affogato-Medium.eot')
+	src: url('fonts/Affogato-Medium.eot?#iefix') format("embedded-opentype"), url('fonts/Affogato-Medium.woff') format("woff"), url('fonts/Affogato-Medium.woff2') format("woff2"), url('fonts/Affogato-Medium.ttf') format("truetype"), url('fonts/Affogato-Medium.svg') format("svg")
+	font-weight: normal
+	font-style: normal
+
+body
+	margin: 0
+
+.flex
+	display: flex
+	align-items: center
+	@media(max-width: 767px)
+		display: block
+
+img
+	max-width: 100%
+
+.container
+	max-width: 1416px
+
+	@media (min-width: 1200px)
+		width: auto
+	@media (max-width: 1440px)
+		width: 1170px
+	@media (max-width: 767px)
+		width: 100%
+header
+	background: url(img/headerbg.png) no-repeat top center
+	padding: 10px 0 123px 0
+	background-size: cover
+	position: relative
+	z-index: 3
+
+	.toggle-mobile
+		display: none
+
+	@media(max-width: 767px)
+		background: url(img/headerbg-mobile.png) no-repeat top center
+		padding: 10px 0 50px 0
+		.toggle-mobile
+			display: block
+			position: absolute
+			top: 22px
+			right: 22px
+			transform: translateY(-50%)
+	@media(max-width: 767px) and (orientation: landscape)
+		padding: 10px 0 82px 0
+		background-size: cover
+
+	.logo
+		display: block
+		max-width: 197px
+		@media(max-width: 767px)
+			max-width: 107px
+
+	.user-items
+		font-family: Affogato-Black
+		font-size: 22px
+		letter-spacing: -0.8px
+		color: #fff
+		@media (max-width: 1440px)
+			font-size: 18px
+		@media(max-width: 767px)
+			display: none
+		a
+			color: #fff
+
+			&:hover
+				text-decoration: none
+
+		.cart
+			position: relative
+			display: inline-block
+			padding-bottom: 10px
+
+			.cart-modal
+				display: none
+				position: absolute
+				padding: 61px 0 18px 0
+				background: #fff
+				z-index: 999
+				list-style: none
+				margin: 10px 0 0 0
+				width: 336px
+				transform: translate(-50%, 3%)
+				left: 50%
+				top: 0
+				border-radius: 54px
+				box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+				background-color: #ffffff
+				color: #000000
+
+				.inner
+					padding: 0 26px
+
+				.item 
+					color: #000000
+					font-family: Affogato-Medium
+					font-size: 15px
+					line-height: 1.6
+					margin-bottom: 23px
+
+					.img
+						> div
+							border-radius: 46.8px
+							box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+							background: #fff
+							padding: 15px 25px
+					h3
+						font-family: Affogato-Bold
+						font-size: 22px
+						margin-top: 0
+
+
+				.subtotal
+					font-family: Affogato-Bold
+					font-size: 22px
+					line-height: 1.23
+					margin: 16px 0
+
+				.actions
+					text-align: center
+					font-family: Affogato-Bold
+					font-size: 24px
+					line-height: 1.13
+					color: #5e5896
+					margin-top: 22px
+					a
+						display: block
+						width: 204px
+						padding: 9px 17px
+						color: #fff
+						font-family: Affogato-Black
+						font-size: 22px
+						font-weight: 900
+						letter-spacing: -1px
+						box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+						border-radius: 49.3px
+						margin: 5px auto
+
+						&.view-cart
+							background-color: #5e5896
+						&.checkout
+							background-color: #7ec297
+			&:hover
+				.cart-modal
+					display: block
+			img
+				margin-right: 10px
+
+		.profile
+			margin-left: 7px
+			img
+				display: inline-block
+				width: 40px
+				border: 4px solid rgba(255, 255, 255, 0.2)
+				border-radius: 18px
+
+	.main-menu
+		padding: 0
+		margin: 0
+		list-style: none
+		display: flex
+		justify-content: space-between
+		@media(max-width: 767px)
+			display: none
+
+		> li
+			display: inline-block
+			> a
+				font-family: Affogato-Black
+				font-size: 18px
+				letter-spacing: -0.8px
+				color: #fff
+				text-transform: uppercase
+				@media (max-width: 1440px)
+					font-size: 16px
+
+			&.has-children
+				position: relative
+				> a
+					padding-right: 15px
+					background: url(img/chevron-bottom.svg) no-repeat right center
+					position: relative
+					z-index: 10
+
+				> ul
+					display: none
+					position: absolute
+					padding: 61px 26px 18px 26px
+					background: #fff
+					z-index: 9
+					list-style: none
+					margin: 0
+					width: 336px
+					transform: translate(-50%, 0)
+					left: 50%
+					top: -18px
+					border-radius: 54px
+					box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+					background-color: #ffffff
+
+
+					li
+						width: 50%
+						float: left
+						padding: 10px
+						text-align: center
+
+						img
+							display: block
+							margin: 0 auto 20px auto
+							width: 100%
+						a
+							font-family: Affogato-Black
+							font-size: 18px
+							letter-spacing: -0.8px
+							color: #5e5995
+				&:hover
+					> ul
+						display: block
+					> a
+						color: #5e5995
+						background: url(img/chevron-up.svg) no-repeat right center
+						text-decoration: none
+
+main
+	background: url(img/main-pattern.png) no-repeat top center
+	background-size: contain
+	margin-top: -100px
+	padding-top: 100px
+	position: relative
+	z-index: 1
+	padding-bottom: 176px
+
+	.page-title
+		font-family: Affogato-Black
+		font-size: 38px
+		color: #5e5995
+		margin: 54px 0 49px 150px
+		@media(max-width: 767px)
+			font-size: 26px
+			margin: 0
+			text-transform: uppercase
+
+		a
+			font-family: Affogato-Black
+			font-size: 38px
+			color: #5e5995
+			@media(max-width: 767px)
+				font-size: 26px
+
+			&:hover
+				text-decoration: none
+
+	.purchase-details
+		h3
+			font-family: Affogato-Black
+			font-size: 24px
+			color: #5e5995
+			margin-bottom: 60px
+
+		.cart-table
+			padding-right: 40px
+
+		.item-mobile
+			display: none
+			padding: 11px 0
+			border-bottom: 1px solid rgba(126, 121, 171, 0.3)
+			@media(max-width: 767px)
+				display: block
+			.img
+				padding-right: 0
+				font-family: Affogato-Medium
+				font-size: 17px
+				color: #000000
+				text-align: center
+				> div
+					border-radius: 16.8px
+					box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+					background-size: contain !important
+					padding: 10px
+					margin-bottom: 10px
+
+					&:before
+						content: ""
+						display: block
+						padding-top: 100%
+			h4
+				font-family: Affogato-Black
+				font-size: 22px
+				color: #000000
+				margin: 0 0 10px 0
+
+			label
+				font-family: Affogato-Bold
+				font-size: 17px
+				line-height: 1.41
+				color: #000000
+
+			.qty
+				display: flex
+				align-items: center
+				margin-bottom: 10px
+
+			.qty-input
+				position: relative
+				width: 141px
+				margin: 0 auto
+
+				input
+					width: 100%
+					height: 42px
+					border-radius: 100px
+					background-color: #eff0f4
+					border: none
+					text-align: center
+
+				span
+					position: absolute
+					width: 36px
+					height: 36px
+					border-radius: 32.8px
+					box-shadow: 0 2px 10px 0 rgba(67, 76, 51, 0.19)
+					background-color: #ffffff
+					font-family: Affogato-Black
+					font-size: 14px
+					letter-spacing: -0.6px
+					text-align: center
+					color: #2d2866
+					line-height: 36px
+					top: 3px
+					cursor: pointer
+
+					&.plus
+						right: 3px
+
+					&.minus
+						left: 3px
+
+			.subtotal
+				font-family: Affogato-Medium
+				font-size: 17px
+				color: #000000
+
+				span
+					line-height: 52px
+
+			.actions
+				> div
+					padding-right: 0
+				span
+					font-family: Affogato-Bold
+					font-size: 16px
+					line-height: 1.33
+					color: #5e5896
+					cursor: pointer
+					padding-left: 16px
+					display: inline-block
+
+					&.remove
+						background: url(img/remove.svg) no-repeat left center
+						margin-bottom: 9px
+					&.save
+						background: url(img/checked.svg) no-repeat left center
+
+
+		.item
+			padding: 20px 0
+			border-bottom: 1px solid rgba(126, 121, 171, 0.3)
+
+			@media(max-width: 767px)
+				display: none
+			.img
+				padding-right: 0
+				> div
+					border-radius: 16.8px
+					box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+					background-size: contain !important
+					padding: 10px
+
+					&:before
+						content: ""
+						display: block
+						padding-top: 100%
+
+			.text
+				h4
+					font-family: Affogato-Black
+					font-size: 22px
+					color: #000000
+					margin: 0 0 5px 0
+
+				p
+					opacity: 0.49
+					font-family: Affogato-Medium
+					font-size: 17px
+					line-height: 1.41
+					color: #000000
+
+			.qty
+				text-align: center
+
+				.qty-input
+					position: relative
+					width: 141px
+					margin: 0 auto
+					margin-top: 10px
+
+				input
+					width: 100%
+					height: 42px
+					border-radius: 100px
+					background-color: #eff0f4
+					border: none
+					text-align: center
+
+				span
+					position: absolute
+					width: 36px
+					height: 36px
+					border-radius: 32.8px
+					box-shadow: 0 2px 10px 0 rgba(67, 76, 51, 0.19)
+					background-color: #ffffff
+					font-family: Affogato-Black
+					font-size: 14px
+					letter-spacing: -0.6px
+					text-align: center
+					color: #2d2866
+					line-height: 36px
+					top: 3px
+					cursor: pointer
+
+					&.plus
+						right: 3px
+
+					&.minus
+						left: 3px
+			label
+				font-family: Affogato-Bold
+				font-size: 17px
+				line-height: 1.41
+				text-align: center
+				color: #000000
+
+			.subtotal
+				font-family: Affogato-Medium
+				font-size: 17px
+				text-align: center
+				color: #000000
+
+				span
+					line-height: 52px
+
+			.actions
+				span
+					font-family: Affogato-Bold
+					font-size: 18px
+					line-height: 1.33
+					color: #5e5896
+					cursor: pointer
+					padding-left: 20px
+					display: inline-block
+					width: 100%
+
+					&.remove
+						background: url(img/remove.svg) no-repeat left center
+						margin-bottom: 9px
+					&.save
+						background: url(img/checked.svg) no-repeat left center
+
+	.summary
+		margin-top: -150px
+		@media(max-width: 767px)
+			margin-top: 0
+		.inner
+			border-radius: 54px
+			box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+			background-color: #ffffff
+			padding: 55px 30px
+			background: #fff url(img/cart-pattern.png) no-repeat top center
+			background-size: contain
+			@media(max-width: 767px)
+				box-shadow: none
+				background: none
+				padding: 55px 0
+
+			h3
+				font-family: Affogato-Black
+				font-size: 24px
+				color: #5e5995
+				margin: 0 0 43px 0
+
+			.total-cost,
+			.fee
+				font-family: Affogato-Medium
+				font-size: 20px
+				line-height: 1.2
+				color: #000000
+
+			.total
+				font-family: Affogato-Bold
+				font-size: 26px
+				line-height: 0.92
+				color: #000000
+				padding: 35px 0
+
+			.promo
+				display: flex
+				align-items: flex-end
+				small
+					font-family: Affogato-Medium
+					font-size: 14px
+					line-height: 2
+					letter-spacing: 1.4px
+					color: #a8acb9
+					display: inline-block
+					padding-left: 21px
+					text-align: center
+
+					@media (max-width: 1440px)
+						font-size: 12px
+						letter-spacing: 1px
+
+				input
+					height: 42px
+					border-radius: 100px
+					background-color: #eff0f4
+					border: none
+					width: 100%
+					padding-left: 20px
+
+				.submit
+					padding-left: 0
+			button
+				text-transform: uppercase
+				height: 48px
+				border-radius: 32.8px
+				box-shadow: 10px 7px 22px 0 rgba(67, 76, 51, 0.41)
+				background-color: #ffffff
+				border: none
+				font-family: Affogato-Black
+				font-size: 14px
+				letter-spacing: -0.6px
+				text-align: center
+				color: #2d2866
+				width: 100%
+
+			.notification
+				font-family: Affogato-Medium
+				font-size: 18px
+				line-height: 1.28
+				padding-top: 10px
+				padding-bottom: 10px
+				margin-top: 20px
+
+				&.error
+					color: #d0021b
+
+				&.ok
+					color: #5e5995
+					padding-left: 70px
+					background: url(img/check-art.svg) no-repeat left center
+					background-size: contain
+
+
+				@media (max-width: 1440px)
+					font-size: 14px
+
+			.promo-box
+				border-radius: 11px
+				border: solid 2px rgba(94, 88, 150, 0.2)
+				padding: 19px
+				margin: 26px 0 0 0
+
+				.name
+					font-family: Affogato-Medium
+					font-size: 20px
+					line-height: 1.2
+					color: #000000
+					margin-bottom: 10px
+
+				small
+					font-family: Affogato-Medium
+					font-size: 18px
+					line-height: 1.28
+					color: #a9adba
+
+				.coupon-info
+					font-family: Affogato-Medium
+					font-size: 20px
+					line-height: 1.2
+					text-transform: uppercase
+
+					img
+						margin-right: 5px
+
+					@media (max-width: 1440px)
+						font-size: 16px
+
+				.not-applied
+					padding-top: 20px
+					@media(max-width: 767px)
+						display: flex !important
+
+					.coupon-info
+						color: #d0021b
+
+				.applied
+					padding-top: 20px
+					@media(max-width: 767px)
+						display: flex !important
+					.coupon-info
+						color: #60a712
+						
+			.checkout-btn
+				display: block
+				width: 204px
+				padding: 9px 17px
+				text-align: center
+				color: #fff
+				font-family: Affogato-Black
+				font-size: 22px
+				font-weight: 900
+				letter-spacing: -1px
+				box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+				border-radius: 49.3px
+				margin: 100px auto 0 auto
+				background-color: #7ec297
+				@media(max-width: 767px)
+					width: 198px
+					margin: 50px auto 0 auto
+
+				&:hover
+					text-decoration: none
+
+			.shipping-box
+				border-radius: 11px
+				border: solid 2px rgba(94, 88, 150, 0.2)
+				padding: 37px
+				margin: 35px 0
+				@media(max-width: 767px)
+					padding: 27px
+
+				.ship-item
+					font-family: Affogato-Medium
+					font-size: 20px
+					line-height: 1.2
+					letter-spacing: normal
+					color: #000000
+					margin-bottom: 31px
+
+					&:last-child
+						margin: 0
+					small
+						display: inline-block
+						width: 100%
+						padding-left: 28px
+						font-size: 18px
+						line-height: 1
+						color: #a9adba
+
+.place-order
+	.purchase-details
+		h3
+			@media (max-width: 767px)
+				background: url(img/triangle-place.svg) no-repeat right center
+.shipping-details
+	padding-right: 45px
+
+	@media (max-width: 767px)
+		padding-right: 15px
+
+	form
+		label
+			font-family: Affogato-Medium
+			font-size: 14px
+			line-height: 2
+			letter-spacing: 1.4px
+			color: #a8acb9
+			display: block
+			margin: 0 0 20px 0
+
+			span
+				padding-left: 20px
+				display: inline-block
+
+		textarea
+			height: 110px
+			width: 100%
+			border: none
+			font-family: Affogato-Medium
+			font-size: 15px
+			line-height: 1.4
+			color: #4f5362
+			padding-left: 21px
+			padding-top: 21px
+			background-color: #eff0f4
+			border-radius: 10px
+			resize: none
+		input[type="text"]
+			display: inline-block
+			width: 100%
+			height: 42px
+			border-radius: 100px
+			background-color: #eff0f4
+			padding-left: 21px
+			border: none
+			font-family: Affogato-Medium
+			font-size: 15px
+			line-height: 1.4
+			color: #4f5362
+
+	.card
+		margin-top: 25px
+		text-align: right
+
+		@media (max-width: 767px)
+			text-align: center
+		.white-btn
+			display: inline-block
+			width: 180px
+			padding: 9px 17px
+			text-align: center
+			font-family: Affogato-Black
+			font-size: 14px
+			font-weight: 900
+			letter-spacing: -1px
+			box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+			border-radius: 49.3px
+			text-transform: uppercase
+			color: #2d2866
+			margin-top: 45px
+			@media (max-width: 767px)
+				margin-top: 37px
+				width: 206px
+
+			&:hover
+				text-decoration: none
+
+	.payment-details
+		margin-top: 60px
+[type="radio"]
+	&:checked, &:not(:checked)
+		position: absolute
+		left: -9999px
+	&:checked + label, &:not(:checked) + label
+		position: relative
+		padding-left: 28px
+		cursor: pointer
+		line-height: 20px
+		display: inline-block
+		color: #666
+	&:checked + label:before, &:not(:checked) + label:before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 20px
+		height: 20px
+		border: 2px solid #2d2866
+		border-radius: 100%
+		background: #fff
+	&:checked + label:after
+		content: ''
+		width: 12px
+		height: 12px
+		background: #2d2866
+		position: absolute
+		top: 4px
+		left: 4px
+		border-radius: 100%
+		-webkit-transition: all 0.2s ease
+		transition: all 0.2s ease
+	&:not(:checked) + label:after
+		content: ''
+		width: 12px
+		height: 12px
+		background: #F87DA9
+		position: absolute
+		top: 4px
+		left: 4px
+		border-radius: 100%
+		-webkit-transition: all 0.2s ease
+		transition: all 0.2s ease
+		opacity: 0
+		-webkit-transform: scale(0)
+		transform: scale(0)
+	&:checked + label:after
+		opacity: 1
+		-webkit-transform: scale(1)
+		transform: scale(1)
+.banner
+	margin-top: -70px
+	position: relative
+	z-index: -1
+
+	img
+		width: 100%
+
+.filters
+	font-family: Affogato-Black
+	font-size: 38px
+	color: #00b3f2
+	text-transform: uppercase
+	padding: 64px 0
+
+	> span
+		display: inline-block
+		padding: 12px 63px 12px 28px
+		background: url(img/filter-arrow.svg) no-repeat 88% center
+		margin-left: 27px
+		border-radius: 20px
+		background-color: #bdbdbd
+		color: #fff
+		font-family: Affogato-Black
+		font-size: 19px
+		letter-spacing: -0.9px
+		cursor: pointer
+.products
+	.item
+		margin-bottom: 72px
+		&.first
+			clear: left
+		.img
+			border-radius: 46.8px
+			box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+			text-align: center
+			padding: 60px 30px 30px 30px
+			position: relative
+			background: #fff
+			z-index: 9
+
+			.online
+				display: inline-block
+				box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				width: 100px
+				margin: 0 auto
+				padding: 7px 6px
+				font-family: Affogato-Black
+				font-size: 14px
+				letter-spacing: -0.6px
+				text-align: center
+				color: #ffffff
+				text-transform: uppercase
+				border-bottom-left-radius: 11.8px
+				border-bottom-right-radius: 11.8px
+				background-color: #7ec297
+
+			.cat
+				display: block
+				position: absolute
+				top: 18px
+				right: 16px
+				border-radius: 100%
+				background: #fff
+				z-index: 8
+				width: 60px
+				box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+
+			.heart
+				position: absolute
+				top: 18px
+				left: 16px
+				width: 20px
+				height: 18px
+				background: url(img/heart.svg) no-repeat center
+				background-size: contain
+
+				&.active,
+				&:hover
+					background: url(img/heart-red.svg) no-repeat center
+					background-size: contain
+
+		.details
+			border-radius: 46.8px
+			box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+			text-align: center
+			padding: 60px 15px 30px 15px
+			position: relative
+			width: calc(100% - 30px)
+			margin: 0 auto
+			top: -50px
+			height: 230px
+			background: url(img/patternsm.svg) no-repeat bottom center
+
+			@media (max-width: 1440px)
+				height: 240px
+
+			h3
+				font-family: Affogato-Medium
+				font-size: 22px
+				line-height: 1.09
+				text-align: center
+				margin-bottom: 16px
+
+			.reg-price
+				font-family: Affogato-Black
+				font-size: 28px
+				line-height: 28px
+				text-align: center
+				color: #5e5995
+				margin-top: 25px
+
+			.clearance
+				.perc
+					position: absolute
+					bottom: 40px
+					left: -15px
+					border-radius: 20px
+					background-color: #f9cc22
+					font-family: Affogato-Black
+					font-size: 24px
+					text-align: center
+					color: #5e5995
+					padding: 7px
+				.lbl
+					opacity: 0.4
+					font-family: Affogato-Medium
+					font-size: 12px
+					text-align: center
+					color: #000000
+					line-height: 12px
+
+				.sale-price
+					font-family: Affogato-Black
+					font-size: 28px
+					line-height: 28px
+					text-align: center
+					color: #df4f6b
+
+				.reg-price
+					font-family: Affogato-Black
+					font-size: 18px
+					font-weight: 900
+					text-align: center
+					color: #706b74
+					text-decoration: line-through
+					margin: 0
+
+			.add-to-cart
+				border-radius: 39px
+				background-color: #009c49
+				font-family: Affogato-Black
+				font-size: 19px
+				letter-spacing: -0.9px
+				text-align: center
+				color: #ffffff
+				display: inline-block
+				text-transform: uppercase
+				position: absolute
+				bottom: -15px
+				left: 0
+				right: 0
+				width: 156px
+				margin: 0 auto
+				padding: 9px 19px
+
+				&:hover
+					text-decoration: none
+
+		&.online-only
+			.details
+				background: url(img/patternsm-red.svg) no-repeat bottom center
+
+.load-more
+	justify-content: center
+	margin: 100px 0 297px 0
+	*
+		margin: 0 10px
+		display: inline-block
+	.i1
+		width: 20px
+		height: 20px
+		border-radius: 28px
+		background-color: #f8d03f
+	.i2
+		width: 50px
+		height: 30px
+		border-radius: 28px
+		background-color: #f8d03f
+	.i3
+		width: 70px
+		height: 50px
+		border-radius: 28px
+		background-color: #f8d03f
+
+	a
+		font-family: Affogato-Black
+		font-size: 26.6px
+		line-height: 70px
+		letter-spacing: -1.2px
+		text-align: center
+		color: #ffffff
+		width: 238px
+		box-shadow: 0 22px 54px 0 rgba(248, 208, 63, 0.31)
+		height: 70px
+		background-color: #f8d03f
+		border-radius: 28px
+		background-color: #f8d03f
+		text-transform: uppercase
+
+		&:hover
+			text-decoration: none
+
+footer
+	.carousel-wrap
+		position: relative
+		@media(max-width: 767px)
+			.slick-slide
+				img
+					width: 100%
+		.tag
+			border-radius: 28px
+			text-align: center
+			background-color: #df4f6b
+			font-family: Affogato-Black
+			font-size: 26.6px
+			letter-spacing: -1.2px
+			color: #ffffff
+			padding: 16px 45px
+			width: 238px
+			position: absolute
+			top: 50%
+			left: 0
+			right: 0
+			margin: 0 auto
+			z-index: 2
+			transform: translateY(-50%)
+			box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+
+	.footer-items
+		background: url(img/footerbg.png) no-repeat top center
+		padding: 74px 0 200px 0
+		@media(max-width: 767px)
+			background: url(img/footerbg-mobile.png) no-repeat top center
+			padding: 32px 0 50px 0
+			background-size: cover
+
+		.equal-height
+			display: flex
+			@media(max-width: 767px)
+				display: block
+
+		.item
+			text-align: center
+			position: relative
+			@media(max-width: 767px)
+				text-align: left
+				margin-bottom: 30px
+				overflow: hidden
+				> div
+					float: left
+					padding-right: 15px
+					width: 45%
+
+			h3
+				font-family: Affogato-Black
+				font-size: 24px
+				letter-spacing: -1.1px
+				color: #ffffff
+				margin-bottom: 9px
+
+			p
+				font-family: Affogato-Black
+				font-size: 18px
+				letter-spacing: -0.8px
+				color: #ffffff
+				margin-bottom: 10px
+
+			a
+				font-family: Affogato-Black
+				font-size: 14px
+				line-height: 48px
+				letter-spacing: -0.6px
+				text-align: center
+				color: #2d2866
+				border-radius: 32.8px
+				box-shadow: 10px 7px 22px 0 rgba(67, 76, 51, 0.41)
+				background-color: #ffffff
+				height: 48px
+				padding: 0 6px
+				width: 144px
+				display: inline-block
+				position: absolute
+				bottom: 0
+				left: 0
+				right: 0
+				margin: 0 auto
+				@media(max-width: 767px)
+					display: none
+
+				&:hover
+					text-decoration: none
+
+		.signup-form
+			margin-top: 24px
+			position: relative
+			@media(max-width: 767px)
+				display: none
+			button
+				font-family: Affogato-Black
+				font-size: 14px
+				letter-spacing: -0.6px
+				text-align: center
+				color: #2d2866
+				border-radius: 32.8px
+				box-shadow: 10px 7px 22px 0 rgba(67, 76, 51, 0.41)
+				background-color: #ffffff
+				height: 48px
+				position: absolute
+				right: 0
+				padding: 0 6px
+				width: 120px
+			input
+				height: 48px
+				border-radius: 20px
+				background-color: rgba(0, 0, 0, 0.2)
+				border: none
+				padding-left: 32px
+				width: 100%
+
+				&::-webkit-input-placeholder
+					font-family: Affogato-Black
+					font-size: 19px
+					letter-spacing: -0.9px
+					color: #ffffff
+				&::-moz-placeholder
+					font-family: Affogato-Black
+					font-size: 19px
+					letter-spacing: -0.9px
+					color: #ffffff
+				&:-moz-placeholder
+					font-family: Affogato-Black
+					font-size: 19px
+					letter-spacing: -0.9px
+					color: #ffffff
+				&:-ms-input-placeholder
+					font-family: Affogato-Black
+					font-size: 19px
+					letter-spacing: -0.9px
+					color: #ffffff
+
+	.footer-bottom
+		text-align: center
+		position: relative
+		top: -131px
+		@media(max-width: 767px)
+			top: 20px
+
+		.col
+			margin-top: 95px
+
+		a
+			font-family: Affogato-Medium
+			font-size: 18px
+			line-height: 1.78
+			color: #706b74
+			display: block
+
+			&.emailus
+				display: inline-block
+				width: 100%
+				padding: 9px 17px
+				color: #fff
+				font-family: Affogato-Black
+				font-size: 22px
+				font-weight: 900
+				letter-spacing: -1px
+				box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+				border-radius: 49.3px
+				margin: 14px auto 0 auto
+				background-color: #7ec297
+
+				&:hover
+					text-decoration: none
+		h3
+			font-family: Affogato-Black
+			font-size: 24px
+			color: #5e5995
+			margin: 32px 0 11px 0
+
+		.social,
+		.flags
+			a
+				display: inline-block
+				width: auto
+				margin: 0 14px
+
+		.search-form
+			position: relative
+			width: 179px
+			margin: 0 auto
+			input[type="text"]
+				height: 40px
+				border-radius: 20px
+				background-color: rgba(0, 0, 0, 0.2)
+				border: none
+				width: 100%
+				padding-left: 20px
+			input[type="submit"]
+				font-size: 0
+				height: 20px
+				width: 20px
+				display: block
+				position: absolute
+				top: 50%
+				right: 15px
+				background: url(img/magnifier.svg) no-repeat center
+				border: none
+				transform: translateY(-50%)
+
+
+		.inner
+			border-radius: 54px
+			box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+			background-color: #ffffff
+			padding: 38px 34px
+
+			.logo
+				display: block
+				margin: 0 auto
+				padding-bottom: 28px
+
+			h3
+				color: #bb2531
+
+	.mobile-footer
+		text-align: center
+		padding-bottom: 30px
+
+		.block
+			margin-top: 22px
+		a
+			font-family: Affogato-Black
+			font-size: 24px
+			color: #5e5995
+
+.white-popup
+	position: relative
+	background: #FFF
+	padding: 0
+	width: auto
+	max-width: 743px
+	margin: 20px auto
+	z-index: 9999999
+	border-radius: 54px
+	box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+	background-color: #ffffff
+
+	.close-modal
+		position: absolute
+		top: 29px
+		right: 29px
+
+	.inner
+		padding: 60px 90px
+		@media(max-width: 767px)
+			padding: 36px 16px
+
+	h2
+		font-family: Affogato-Black
+		font-size: 24px
+		color: #5e5995
+		margin: 0 0 36px 0
+		cursor: pointer
+
+		img
+			margin-right: 30px
+			@media(max-width: 767px)
+				margin-right: 19px
+
+	.new,
+	.returning
+		padding: 0 15px
+		@media(max-width: 767px)
+			padding: 0
+
+		h3
+			font-family: Affogato-Black
+			font-size: 20px
+			margin: 0 0 22px 0
+			color: #000000
+		p
+			font-family: Affogato-Medium
+			font-size: 18px
+			line-height: 1.33
+			color: #706b74
+			width: 70%
+
+		.btns
+			text-align: center
+			display: flex
+			justify-content: space-between
+			margin-top: 28px
+
+	.btn-green,
+	.btn-white
+		display: inline-block
+		width: 204px
+		padding: 9px 17px
+		text-align: center
+		font-family: Affogato-Black
+		font-size: 22px
+		font-weight: 900
+		letter-spacing: -1px
+		box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+		border-radius: 49.3px
+		text-transform: uppercase
+		@media(max-width: 767px)
+			width: 143px
+			font-size: 14px
+
+		&:hover
+			text-decoration: none
+
+	.btn-green
+		background-color: #7ec297
+		color: #fff
+
+	.btn-white
+		background-color: #fff
+		color: #5e5896
+	.returning
+		margin-top: 85px
+		.btns
+			display: block
+
+	.guest-checkout
+		display: none
+
+	#guest_form
+		max-width: 344px
+		margin: 0 auto
+
+		.btn-white
+			width: 233px
+			border: none
+			margin-top: 58px
+		label
+			font-family: Affogato-Medium
+			font-size: 14px
+			line-height: 2
+			letter-spacing: 1.4px
+			color: #a8acb9
+			display: block
+			margin: 0 0 20px 0
+
+			span
+				padding-left: 20px
+				display: inline-block
+
+		input[type="text"]
+			display: inline-block
+			width: 100%
+			height: 42px
+			border-radius: 100px
+			background-color: #eff0f4
+			padding-left: 21px
+			border: none
+			font-family: Affogato-Medium
+			font-size: 15px
+			line-height: 1.4
+			color: #4f5362
