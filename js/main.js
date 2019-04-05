@@ -1,8 +1,10 @@
 $(function() {
-	$('.toggle-mobile').click(function() {
+	$('.toggle-mobile').click(function(e) {
+		e.preventDefault();
 		$('.mobile-menu').addClass('open');
 	});
-	$('.close-toggle').click(function() {
+	$('.close-toggle').click(function(e) {
+		e.preventDefault();
 		$('.mobile-menu').removeClass('open');
 	});
 	$('.img-feed').slick({
