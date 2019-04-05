@@ -1,4 +1,10 @@
 $(function() {
+	$('.toggle-mobile').click(function() {
+		$('.mobile-menu').addClass('open');
+	});
+	$('.close-toggle').click(function() {
+		$('.mobile-menu').removeClass('open');
+	});
 	$('.img-feed').slick({
 		slidesToShow: 6,
 		dots: false,
