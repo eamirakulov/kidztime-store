@@ -139,7 +139,7 @@ header {
     @media (max-width: 1440px) {
       header .user-items {
         font-size: 18px; } }
-    @media (max-width: 1024px) {
+    @media (max-width: 1099px) {
       header .user-items {
         font-size: 14px; }
         header .user-items .search img {
@@ -220,6 +220,10 @@ header {
         display: block; }
       header .user-items .cart img {
         margin-right: 10px; }
+        @media (max-width: 1199px) {
+          header .user-items .cart img {
+            margin-right: 5px;
+            width: 20px; } }
         @media (max-width: 1024px) and (orientation: portrait) {
           header .user-items .cart img {
             margin-right: 0;
@@ -230,6 +234,9 @@ header {
             width: 20px; } }
     header .user-items .profile {
       margin-left: 7px; }
+      @media (max-width: 1199px) {
+        header .user-items .profile {
+          margin: 0; } }
       @media (max-width: 1024px) and (orientation: portrait) {
         header .user-items .profile {
           margin: 0; } }
@@ -238,6 +245,9 @@ header {
         width: 40px;
         border: 2px solid rgba(255, 255, 255, 0.2);
         border-radius: 18px; }
+        @media (max-width: 1199px) {
+          header .user-items .profile img {
+            width: 17px; } }
         @media (max-width: 1024px) and (orientation: portrait) {
           header .user-items .profile img {
             width: 17px; } }
@@ -264,6 +274,9 @@ header {
         @media (max-width: 1440px) {
           header .main-menu > li > a {
             font-size: 16px; } }
+        @media (max-width: 1199px) {
+          header .main-menu > li > a {
+            font-size: 12px; } }
         @media (max-width: 1024px) and (orientation: portrait) {
           header .main-menu > li > a {
             font-size: 11px; } }
