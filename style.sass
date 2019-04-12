@@ -355,6 +355,9 @@ main
 	z-index: 1
 	padding-bottom: 176px
 
+	@media (min-width: 1440px)
+		background-size: cover
+
 	.page-title
 		font-family: Affogato-Black
 		font-size: 38px
@@ -1512,3 +1515,970 @@ footer
 			font-size: 15px
 			line-height: 1.4
 			color: #4f5362
+
+.account-wrap
+	padding-top: 90px
+
+	.mobile-back
+		display: none
+		margin-right: 20px
+		@media (max-width: 767px)
+			display: inline-block
+
+
+	@media (max-width: 767px)
+		padding-top: 0
+	.content
+		padding: 0 55px
+		@media (max-width: 1024px)
+			padding: 0 15px
+		.page-title
+			text-transform: uppercase
+			margin: 0 0 33px 0
+
+		.form-item
+			font-family: Affogato-Medium
+			font-size: 20px
+			color: #706b74
+			margin-bottom: 80px
+
+			input[type="submit"]
+				margin-top: 50px
+
+			form
+				margin-top: 33px
+
+			.help
+				display: inline-block
+				vertical-align: middle
+				margin-left: 20px
+				line-height: 0
+				position: relative
+				top: -6px
+				@media (max-width: 767px)
+					position: absolute
+					top: -30px
+					right: 0
+
+				&:hover
+					opacity: 0.6
+
+			.pwd
+				position: relative
+				display: inline-block
+				width: 70%
+				@media (max-width: 767px)
+					width: 100%
+
+				input
+					display: inline-block
+					width: 100%
+
+				.pwd-visibility
+					display: block
+					width: 22px
+					height: 15px
+					position: absolute
+					top: 50%
+					right: 15px
+					transform: translateY(-50%)
+					background: url(img/visibility.svg) no-repeat center
+					@media (max-width: 767px)
+						top: 38%
+
+					&:hover
+						opacity: 0.7
+						cursor: pointer
+
+			label
+				display: block
+				font-family: Affogato-Medium
+				font-size: 14px
+				line-height: 2
+				letter-spacing: 1.4px
+				color: #a8acb9
+
+				> span
+					font-size: 13px
+					line-height: 2.15
+					letter-spacing: 1.3px
+					color: #df4f6b
+					margin: 0 5px 0 10px
+					display: inline-block
+
+				textarea
+					display: block
+					width: 70%
+					resize: none
+					margin: 10px 0
+					height: 110px
+					border-radius: 10px
+					background-color: #eff0f4
+					padding: 15px
+					border: none
+					font-family: Affogato-Medium
+					font-size: 15px
+					line-height: 1.4
+					color: #4f5362
+
+					@media (max-width: 1024px)
+						width: 100%
+
+					&:focus
+						outline: none
+
+				input
+					display: block
+					width: 70%
+					margin: 0 0 10px 0
+					height: 42px
+					border-radius: 100px
+					background-color: #eff0f4
+					padding-left: 21px
+					border: none
+					font-family: Affogato-Medium
+					font-size: 15px
+					line-height: 1.4
+					color: #4f5362
+
+					@media (max-width: 1024px)
+						width: 100%
+					@media (max-width: 767px)
+						margin-bottom: 20px
+
+					&:focus
+						outline: none
+
+
+			.form-bottom
+				margin-top: 30px
+
+			.forgot
+				text-align: right
+				a
+					font-size: 20px
+					line-height: 1.7
+					color: #5e5995
+			.remember
+				font-size: 20px
+				color: #706b74
+				@media (max-width: 767px)
+					margin-top: 20px
+
+				label
+					position: relative
+					cursor: pointer
+					font-size: 20px
+					letter-spacing: 0
+					&:before
+						content: ''
+						-webkit-appearance: none
+						background-color: transparent
+						border: 2px solid #2d2866
+						box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05)
+						padding: 7px
+						display: inline-block
+						position: relative
+						vertical-align: middle
+						cursor: pointer
+						margin-right: 5px
+
+				input
+					display: none
+					width: auto
+					vertical-align: middle
+
+					&:checked + label:after
+						content: ''
+						display: block
+						position: absolute
+						top: 15px
+						left: 6px
+						width: 6px
+						height: 10px
+						border: solid #2d2866
+						border-width: 0 2px 2px 0
+						transform: rotate(45deg)
+			h2
+				opacity: 0.7
+				font-family: Affogato-Black
+				font-size: 28px
+				color: #000000
+				margin: 0 0 11px 0
+				padding: 0 0 11px 0
+				border-bottom: 1px solid #979797
+				position: relative
+				@media (max-width: 767px)
+					font-size: 24px
+
+				> span
+					position: absolute
+					right: 0
+					top: 50%
+					transform: translateY(-50%)
+					display: block
+					font-family: Affogato-Medium
+					font-size: 14px
+					line-height: 2
+					letter-spacing: 1.4px
+					color: #a8acb9
+
+					> span
+						font-size: 13px
+						line-height: 2.15
+						letter-spacing: 1.3px
+						color: #df4f6b
+						margin: 0 0px 0 0
+						display: inline-block
+
+	.right-side
+		margin-top: 75px
+		h2
+			opacity: 0.7
+			font-family: Affogato-Black
+			font-size: 28px
+			color: #000000
+			margin: 0
+
+
+		h3
+			opacity: 0.8
+			font-family: Affogato-Black
+			font-size: 20px
+			color: #000000
+			margin: 27px 0 13px 0
+
+		p
+			font-family: Affogato-Medium
+			font-size: 18px
+			font-weight: 500
+			line-height: 1.33
+			color: #706b74
+			margin: 0
+
+			a
+				color: #5e5995
+				word-break: break-all
+
+	.left-side
+		@media (max-width: 767px)
+			display: none
+		h3
+			font-family: Affogato-Black
+			font-size: 24px
+			color: #bb2531
+			margin: 0 0 34px 0
+
+		ul
+			list-style: none
+			padding: 0 0 0 20px
+			margin: 0 0 60px 0
+			li
+				display: block
+				margin-bottom: 11px
+
+				a
+					font-family: Affogato-Medium
+					font-size: 18px
+					color: #2d2866
+
+				&:hover,
+				&.active
+					border-right: 2.5px solid #2d2866
+
+					a
+						font-family: Affogato-Black
+						font-size: 18px
+						color: #2d2866
+						text-decoration: none
+
+	.btn-green,
+	.btn-white
+		display: inline-block
+		width: 204px
+		padding: 9px 17px
+		text-align: center
+		font-family: Affogato-Black
+		font-size: 22px
+		font-weight: 900
+		letter-spacing: -1px
+		box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+		border-radius: 49.3px
+		text-transform: uppercase
+		border: none
+		@media(max-width: 767px)
+			width: 225px
+			margin: 0 auto
+			display: block
+
+		&:hover
+			text-decoration: none
+
+	.btn-green
+		background: #7ec297
+		color: #fff
+
+	.btn-white
+		background: #fff
+		color: #000
+
+	&.no-orders
+		font-family: Affogato-Medium
+		font-size: 20px
+		line-height: 1.7
+		color: #5e5995
+
+		.content
+
+			h3
+				opacity: 0.7
+				font-family: Affogato-Black
+				font-size: 28px
+				color: #000000
+				margin: 0 0 11px 0
+				padding: 0 0 11px 0
+				border-bottom: 1px solid #979797
+				position: relative
+
+			p
+				margin: 100px 0 33px 0
+				@media (max-width: 767px)
+					margin-top: 20px
+
+			.btn-green
+				margin-top: 76px
+
+	&.orders-list
+		font-family: Affogato-Medium
+		font-size: 18px
+		line-height: 1.33
+		color: #77727a
+
+		.content
+			h3
+				opacity: 0.7
+				font-family: Affogato-Black
+				font-size: 28px
+				color: #000000
+				margin: 0 0 27px 0
+				padding: 0 0 11px 0
+				border-bottom: 1px solid #979797
+				position: relative
+				@media (max-width: 767px)
+					font-size: 24px
+
+			.btn-white
+				margin-top: 55px
+
+			.items
+				padding: 0 53px
+				@media (max-width: 767px)
+					padding: 0
+
+				.item
+					padding: 26px 0 
+					border-bottom: 1px solid #979797
+
+					.title
+						font-size: 20px
+						font-family: Affogato-Bold
+						line-height: 1.2
+						letter-spacing: normal
+						color: #4b4b4b
+						margin-bottom: 20px
+
+					.lbl
+						font-size: 18px
+						line-height: 1.33
+						color: #77727a
+
+					.val
+						font-size: 18px
+						line-height: 1.33
+						text-align: right
+						color: #4b4b4b
+
+					.links
+						margin-top: 20px
+						display: flex
+						justify-content: space-between
+
+						a
+							display: inline-block
+							font-size: 20px
+							line-height: 1.7
+							color: #5e5995
+							@media (max-width: 767px)
+								font-size: 18px
+								text-decoration: underline
+
+					.inner
+						padding: 0 0 0 30px
+
+	&.settings
+		.add-address
+			font-size: 14px
+			color: #2d2866
+
+		.subscribe
+			font-size: 20px
+			color: #706b74
+			margin-top: 33px
+
+			h3
+				font-family: Affogato-Medium
+				font-size: 20px
+				line-height: 1.7
+				color: #323232
+				margin: 0 0 7px 30px
+
+			label
+				position: relative
+				cursor: pointer
+				&:before
+					content: ''
+					-webkit-appearance: none
+					background-color: transparent
+					border: 2px solid #2d2866
+					box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05)
+					padding: 7px
+					display: inline-block
+					position: relative
+					vertical-align: middle
+					cursor: pointer
+					margin-right: 5px
+
+			input
+				display: none
+				width: auto
+				vertical-align: middle
+
+				&:checked + label:after
+					content: ''
+					display: block
+					position: absolute
+					top: 10px
+					left: 6px
+					width: 6px
+					height: 10px
+					border: solid #2d2866
+					border-width: 0 2px 2px 0
+					transform: rotate(45deg)
+
+	&.payment-methods,
+	&.settings,
+	&.returns,
+	&.replacement,
+	&.referral,
+	&.kids
+		form
+			label
+				strong
+					color: #a8acb9
+					margin-left: 10px
+					font-family: Affogato-Medium
+					font-size: 14px
+					line-height: 2
+					letter-spacing: 1.4px
+					color: #a8acb9
+
+	&.kids
+		.right-side
+			margin-top: 0
+			.acc-box
+				padding: 100px 20px
+
+				@media (min-width: 1440px)
+					padding: 100px 50px
+				p
+					line-height: 1.7
+		.content
+			.btn-white
+				font-size: 14px
+			.gender
+				padding: 40px 10px
+				label
+					opacity: 0.8
+					font-family: Affogato-Black
+					font-size: 20px
+					color: #000000
+
+				[type="radio"]:checked + label:before,
+				[type="radio"]:not(:checked) + label:before
+					top: 50%
+					transform: translateY(-50%)
+
+				[type="radio"]:checked + label:after
+					top: 14px
+
+	&.payment-methods
+		.add-method
+			margin-top: 85px
+			font-size: 14px
+			color: #2d2866
+
+		.cards
+			.item
+				padding-bottom: 56px
+				display: inline-block
+				width: 75%
+
+				@media (max-width: 1024px)
+					width: 100%
+
+				.card
+					text-align: right
+
+				img
+					margin-left: 27px
+
+				a
+					font-family: Affogato-Medium
+					display: inline-block
+					width: 100%
+					font-size: 20px
+					line-height: 1.7
+					text-align: right
+					color: #5e5995
+					margin-top: 10px
+					text-decoration: underline
+				h4
+					font-family: Affogato-Medium
+					opacity: 0.5
+					font-size: 20px
+					color: #000000
+					margin: 0 0 22px 0
+
+	&.contact-us
+		.form-section-divider
+			margin-top: 52px
+			margin-bottom: 11px
+			border-bottom: 1px solid #979797
+
+		#modal
+			z-index: 9999999
+			position: fixed
+			left: 0
+			right: 0
+			top: 25%
+			background: #fff url(img/pattern-conform.png) no-repeat center
+			background-size: cover
+			@media (max-width: 767px)
+				top: 120px
+			.inner
+				border-radius: 100%
+				@media (max-width: 767px)
+					padding: 100px 40px
+
+				h3
+					margin: 0 0 74px 0
+					font-family: Affogato-Black
+					font-size: 24px
+					text-align: center
+					color: #5e5995
+
+	&.referral
+		.right-side
+			margin-top: 0
+			@media (max-width: 767px)
+				.acc-box
+					margin-top: 15px
+					padding: 50px 27px
+
+			.item
+				display: flex
+				justify-content: space-between
+				align-items: center
+				margin-bottom: 23px
+
+				&:last-child
+					margin: 0
+				*
+					display: inline-block
+					font-family: Affogato-Medium
+
+				.text
+					font-size: 20px
+					padding-left: 32px
+					opacity: 0.8
+					color: #323232
+					position: relative
+
+					@media (max-width: 1600px)
+						font-size: 14px
+
+				img
+					max-width: 38px
+					@media (max-width: 1600px)
+						max-width: 20px
+
+				.num
+					position: absolute
+					left: 0
+					top: 50%
+					transform: translateY(-50%)
+					display: inline-block
+					font-size: 16px
+					line-height: 9px
+					width: 23px
+					text-align: center
+					color: #000000
+					border: 7px solid rgba(248, 208, 63, 0.43)
+					border-radius: 28px
+					background-color: #f8d03f
+					margin-right: 10px
+		.content
+
+			h3
+				opacity: 0.7
+				font-family: Affogato-Black
+				font-size: 32px
+				color: #000000
+				margin: 0 0 21px 0
+
+			h4
+				opacity: 0.8
+				font-family: Affogato-Black
+				font-size: 20px
+				color: #000000
+				margin: 69px 0 10px 0
+
+			.copy
+				display: flex
+				align-items: flex-end
+
+				input
+					width: 100%
+					margin-bottom: 0
+
+				.btn-white
+					height: 42px
+					line-height: 42px
+					padding: 0px 17px
+					width: 100%
+					@media (max-width: 767px)
+						font-size: 14px
+
+	&.replacement,
+	&.returns
+		.btn-green
+			@media (max-width: 767px)
+				margin-top: 50px
+		.content
+			.photo-upload
+				overflow: hidden
+				margin-top: 50px
+				font-family: Affogato-Medium
+				font-size: 18px
+				line-height: 1.89
+				color: #5e5995
+				img
+					display: inline-block
+					margin-right: 20px
+
+				.photos
+					margin: 0 -13px
+					> div
+						width: 50%
+						float: left
+						padding: 13px
+						position: relative
+
+						span
+							cursor: pointer
+							position: absolute
+							top: 9px
+							right: 9px
+
+	&.returns
+		.content
+			.faq-box
+				font-family: Affogato-Medium
+				font-size: 20px
+				color: #706b74
+				margin-bottom: 80px
+
+				h2
+					opacity: 0.7
+					font-family: Affogato-Black
+					font-size: 28px
+					color: #000000
+					margin: 43px 0 25px 0
+
+					@media (max-width: 767px)
+						font-size: 24px
+
+	&.retailers
+		.retailers-grid
+			padding-left: 30px
+			@media (max-width: 767px)
+				padding: 0
+			.item
+				display: block
+				font-family: Affogato-Black
+				font-size: 14px
+				letter-spacing: -0.6px
+				text-align: center
+				color: #5e5995
+
+				@media (min-width: 768px)
+					&:nth-child(3n + 1)
+						clear: left
+
+				@media (max-width: 767px)
+					&:nth-child(2n + 1)
+						clear: left
+
+
+				a
+					display: inline-block
+					padding: 33px 20px
+					color: #5e5995
+
+					&:hover
+						border-radius: 48px
+						box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+						background-color: #ffffff
+						color: #5e5995
+						text-decoration: none
+
+				img
+					display: block
+					margin: 0 auto
+					margin-bottom: 10px
+					max-width: 98px
+
+	&.shipping,
+	&.purchase
+		.faq-box
+			font-family: Affogato-Medium
+			font-size: 20px
+			color: #706b74
+			margin-bottom: 80px
+			a
+				text-decoration: underline
+				color: #5e5995
+
+			h2
+				opacity: 0.7
+				font-family: Affogato-Black
+				font-size: 28px
+				color: #000000
+				margin: 43px 0 25px 0
+		.bottom-sent
+			margin-top: 87px
+			a
+				text-decoration: underline
+				color: #5e5995
+
+	&.rewards
+		.right-side
+			margin-top: 35px
+			.acc-box
+				padding: 55px 20px
+				@media (max-width: 767px)
+					padding: 71px 21px
+
+				p
+					font-family: Affogato-Medium
+					font-size: 20px
+					strong
+						font-family: Affogato-Bold
+						font-size: 20px
+						letter-spacing: normal
+						color: #4b4b4b
+
+				img
+					max-width: 173px
+					display: inline-block
+					margin: 20px 0 40px 0
+					@media (max-width: 1024px)
+						max-width: 100%
+		.content
+			padding: 0 40px
+			@media (max-width: 767px)
+				padding: 0 15px
+		.reward-items
+			> div
+				background: #fff url(img/reward-bg.png) no-repeat center
+				background-size: cover
+				padding: 32px 43px 32px 49px
+				display: flex
+				align-items: center
+				justify-content: space-between
+				border-radius: 21px
+				box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.21)
+				background-color: #ffffff
+				margin-bottom: 55px
+				@media (max-width: 767px)
+					padding: 30px 20px
+					background-size: contain
+					margin-bottom: 14px
+				.lbl
+					opacity: 0.8
+					font-family: Affogato-Black
+					font-size: 24px
+					color: #000000
+					@media (max-width: 767px)
+						font-size: 20px
+
+				.val
+					font-size: 35px
+					text-align: right
+					color: #df4f6b
+					font-family: Affogato-Medium
+					@media (max-width: 767px)
+						font-size: 24px
+					strong
+						font-family: Affogato-Bold
+	.acc-box
+		background: #fff url(img/acc-box-pattern.png) no-repeat center
+		background-size: cover
+		border-radius: 54px
+		box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+		padding: 40px 20px
+
+.order-detail
+	.summary
+		margin-top: 0px
+		@media (max-width: 1024px)
+			margin-top: 40px
+
+		.inner
+			background: url('img/acc-box-pattern.png') no-repeat center
+			background-size: cover
+			@media (max-width: 767px)
+				box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+				padding: 40px 23px
+
+		.row
+			margin-bottom: 25px
+
+			&.total
+				padding: 0
+				margin-bottom: 0
+	.purchase-details
+		.status
+			padding: 11px 0
+			display: flex
+			align-items: center
+			border-bottom: 1px solid rgba(126, 121, 171, 0.3)
+			@media (max-width: 767px)
+				margin-top: 40px
+
+			.order-id,
+			.stat
+				padding: 0
+			.order-id
+				font-family: Affogato-Black
+				font-size: 38px
+				color: #161616
+
+				@media (max-width: 767px)
+					font-size: 24px
+
+			.stat
+				text-align: right
+
+				.red-flag
+					display: inline-block
+					height: 41px
+					border-radius: 4px
+					background-color: #df4f6b
+					font-family: Affogato-Medium
+					padding: 0 20px
+					font-size: 20px
+					text-align: center
+					color: #ffffff
+					line-height: 41px
+					max-width: 125px
+
+		.placed-date
+			margin-top: 15px
+			margin-bottom: 80px
+			*
+				display: inline-block
+			strong
+				font-family: Affogato-Bold
+				font-size: 20px
+				line-height: 1.2
+				color: #000000
+
+			span
+				font-family: Affogato-Medium
+				font-size: 20px
+				line-height: 1.2
+				color: #000000
+				margin-left: 100px
+		.item.flex
+			align-items: end
+
+			label
+				display: block
+
+			.qty
+				label
+					margin-bottom: 25px
+
+		.cart-table
+			h3
+				color: #000
+				padding-bottom: 15px
+				border-bottom: 1px solid rgba(126, 121, 171, 0.3)
+
+		.ship-info
+			margin-top: 100px
+
+			.row
+				margin-top: 57px
+
+			.lbl
+				font-family: Affogato-Bold
+				font-size: 20px
+				line-height: 1.2
+				color: #000000
+
+			.val
+				font-family: Affogato-Medium
+				font-size: 20px
+				line-height: 1.2
+				color: #000000
+				@media (max-width: 767px)
+					padding-left: 30px
+
+				span
+					color: #a9adba
+
+.account-mobile
+	padding-bottom: 20px
+.account-wrap
+	.left-side.account-mobile-menu
+		h3
+			margin-bottom: 20px
+		ul
+			padding: 0 20px
+			li
+				padding: 11px 5px
+				border-bottom: solid 1px #8794a9
+				margin: 0
+				background: url(img/acc-menu-arrow.svg) no-repeat right center
+
+				a
+					display: block
+				&:hover,
+				&.active
+					border-right: none
+
+.popup-active
+	position: relative
+	user-select: none
+
+	&:before
+		content: " "
+		display: block
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(41, 39, 55, 0.2)

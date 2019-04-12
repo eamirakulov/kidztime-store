@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="20px" viewBox="0 0 24 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_photo-camera</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.018 0.012 24 0.012 24 19.2 0.018 19.2"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.799920945">
+        <g id="Customer-Support/Returns_start" transform="translate(-454.000000, -1522.000000)">
+            <g id="Group-6" transform="translate(451.000000, 1162.000000)">
+                <g id="ic_photo-camera" transform="translate(3.000000, 360.000000)">
+                    <g id="photo-camera">
+                        <g>
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M12,7.2 C10.0113,7.2 8.4,8.8125 8.4,10.8 C8.4,12.7887 10.0113,14.4 12,14.4 C13.9875,14.4 15.6,12.7887 15.6,10.8 C15.6,8.8125 13.9875,7.2 12,7.2 Z M21.6,3.6 L18.7194,3.6 C18.3234,3.6 17.8968,3.2931 17.7726,2.9169 L17.0274,0.6831 C16.902,0.3069 16.4766,0 16.0806,0 L7.9194,0 C7.5234,0 7.0968,0.3069 6.9726,0.6831 L6.2274,2.9169 C6.102,3.2931 5.6766,3.6 5.2806,3.6 L2.4,3.6 C1.0806,3.6 0,4.6806 0,6 L0,16.8 C0,18.1194 1.0806,19.2 2.4,19.2 L21.6,19.2 C22.9194,19.2 24,18.1194 24,16.8 L24,6 C24,4.6806 22.9194,3.6 21.6,3.6 Z M12,16.8 C8.6859,16.8 6,14.1141 6,10.8 C6,7.4871 8.6859,4.8 12,4.8 C15.3129,4.8 18,7.4871 18,10.8 C18,14.1141 15.3129,16.8 12,16.8 Z M20.7597,7.6782 C20.2968,7.6782 19.9194,7.302 19.9194,6.8379 C19.9194,6.375 20.2968,5.9988 20.7597,5.9988 C21.2238,5.9988 21.6,6.375 21.6,6.8379 C21.6,7.302 21.2238,7.6782 20.7597,7.6782 Z" id="Fill-1" fill="#2D2866" mask="url(#mask-2)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

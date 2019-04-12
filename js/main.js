@@ -1,4 +1,13 @@
 $(function() {
+	$('.pwd-visibility').click(function(){
+		if($(this).prev().attr('type') === 'password') {
+			$(this).prev().attr('type', 'text');
+		}
+		else {
+			$(this).prev().attr('type', 'password');
+		}
+		
+	});
 	$('.toggle-mobile').click(function(e) {
 		e.preventDefault();
 		$('.mobile-menu').addClass('open');
@@ -56,6 +65,10 @@ $(function() {
 		$('#modal .guest-checkout').fadeOut(function() {
 			$('#modal .options').fadeIn();
 		});
+	});
+	$('.contact-us .close-modal, .returns .close-modal').click(function() {
+		$('#modal').addClass('mfp-hide');
+		$('body').removeClass('popup-active');
 	});
 
 });
