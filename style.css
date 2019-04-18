@@ -125,6 +125,10 @@ header {
   header {
     padding: 10px 0 82px 0;
     background-size: cover; } }
+  @media (max-width: 767px) and (min-width: 376px) {
+    header {
+      padding: 10px 0 110px 0;
+      background-size: cover !important; } }
   header .logo {
     display: block;
     max-width: 197px; }
@@ -218,18 +222,18 @@ header {
               background-color: #7ec297; }
       header .user-items .cart:hover .cart-modal {
         display: block; }
-      header .user-items .cart img {
+      header .user-items .cart > img {
         margin-right: 10px; }
         @media (max-width: 1199px) {
-          header .user-items .cart img {
+          header .user-items .cart > img {
             margin-right: 5px;
             width: 20px; } }
         @media (max-width: 1024px) and (orientation: portrait) {
-          header .user-items .cart img {
+          header .user-items .cart > img {
             margin-right: 0;
             width: 18px; } }
         @media (max-width: 1024px) and (orientation: landscape) {
-          header .user-items .cart img {
+          header .user-items .cart > img {
             margin-right: 5px;
             width: 20px; } }
     header .user-items .profile {
@@ -625,6 +629,9 @@ main {
         text-align: center;
         color: #2d2866;
         width: 100%; }
+        @media (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
+          main .summary .inner button {
+            font-size: 11px; } }
       main .summary .inner .notification {
         font-family: Affogato-Medium;
         font-size: 18px;
@@ -682,6 +689,9 @@ main {
     display: flex !important; } }
           main .summary .inner .promo-box .applied .coupon-info {
             color: #60a712; }
+            @media (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
+              main .summary .inner .promo-box .applied .coupon-info {
+                font-size: 14px; } }
       main .summary .inner .checkout-btn {
         display: block;
         width: 204px;
@@ -1335,6 +1345,13 @@ footer .mobile-footer {
       display: flex;
       justify-content: space-between;
       margin-top: 28px; }
+      @media (max-width: 767px) {
+        .white-popup .new .btns,
+        .white-popup .returning .btns {
+          justify-content: center; }
+          .white-popup .new .btns a,
+          .white-popup .returning .btns a {
+            margin: 0 10px; } }
   .white-popup .btn-green,
   .white-popup .btn-white {
     display: inline-block;
@@ -2240,5 +2257,28 @@ footer .mobile-footer {
     width: 100%;
     height: 100%;
     background: rgba(41, 39, 55, 0.2); }
+
+@media (min-width: 1440px) {
+  .img-feed .slick-slide img {
+    width: 100%; } }
+@media (min-width: 1600px) {
+  footer .footer-items {
+    background: url(img/footerbg.png) no-repeat top center;
+    background-size: cover;
+    padding: 74px 0 300px 0; } }
+@media (min-width: 1920px) {
+  footer .footer-items {
+    background: url(img/footerbg.png) no-repeat top center;
+    background-size: cover;
+    padding: 74px 0 400px 0; } }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 100%; }
+
+  header .user-items .cart:hover .cart-modal {
+    left: -100px; }
+
+  header .user-items {
+    font-size: 13px; } }
 
 /*# sourceMappingURL=style.css.map */
