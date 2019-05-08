@@ -1,0 +1,281 @@
+@font-face
+	font-family: 'Affogato-Black'
+	src: url('fonts/Affogato-Black.eot')
+	src: url('fonts/Affogato-Black.eot?#iefix') format("embedded-opentype"), url('fonts/Affogato-Black.woff') format("woff"), url('fonts/Affogato-Black.woff2') format("woff2"), url('fonts/Affogato-Black.ttf') format("truetype"), url('fonts/Affogato-Black.svg') format("svg")
+	font-weight: normal
+	font-style: normal
+
+
+@font-face
+	font-family: 'Affogato-Bold'
+	src: url('fonts/Affogato-Bold.eot')
+	src: url('fonts/Affogato-Bold.eot?#iefix') format("embedded-opentype"), url('fonts/Affogato-Bold.woff') format("woff"), url('fonts/Affogato-Bold.woff2') format("woff2"), url('fonts/Affogato-Bold.ttf') format("truetype"), url('fonts/Affogato-Bold.svg') format("svg")
+	font-weight: normal
+	font-style: normal
+
+
+@font-face
+	font-family: 'Affogato-Medium'
+	src: url('fonts/Affogato-Medium.eot')
+	src: url('fonts/Affogato-Medium.eot?#iefix') format("embedded-opentype"), url('fonts/Affogato-Medium.woff') format("woff"), url('fonts/Affogato-Medium.woff2') format("woff2"), url('fonts/Affogato-Medium.ttf') format("truetype"), url('fonts/Affogato-Medium.svg') format("svg")
+	font-weight: normal
+	font-style: normal
+
+.banner-1
+	max-width: 1600px
+	margin: 0 auto
+	padding: 15px
+	box-sizing: border-box
+
+	.p-row
+		display: flex
+		justify-content: space-between
+		@media (max-width: 767px)
+			display: block
+
+	*
+		box-sizing: border-box
+
+	img
+		max-width: 100%
+
+	h2
+		font-family: Affogato-Black
+		font-size: 38px
+		color: #5e5995
+		text-transform: uppercase
+		margin: 47px 0 19px 100px
+		@media (max-width: 767px)
+			margin: 20px 0
+
+	.side
+		width: 290px
+		float: left
+		@media (max-width: 1024px)
+			width: 200px
+		@media (max-width: 767px)
+			float: none
+			width: 95%
+			padding-bottom: 40px
+		.prod-h
+			font-family: Affogato-Black
+			font-size: 24px
+			text-align: center
+			color: #000000
+			margin: 0 0 44px 0
+			text-transform: uppercase
+
+		.age
+			background: #7ec297 url(img/oval.svg) no-repeat center
+			background-size: cover
+			font-family: Affogato-Black
+			font-size: 30px
+			text-align: center
+			color: #ffffff
+			border-radius: 150px
+			width: 115px
+			height: 115px
+			display: flex
+			align-items: center
+			justify-content: center
+			position: absolute
+			top: -55px
+			right: -55px
+			text-transform: uppercase
+
+			@media (max-width: 1024px)
+				top: -40px
+				right: -40px
+				width: 80px
+				height: 80px
+				font-size: 22px
+			span
+				font-family: Affogato-Black
+				font-size: 16px
+				@media (max-width: 1024px)
+					font-size: 11px
+
+		.thumb
+			display: flex
+			align-items: center
+			justify-content: center
+			padding: 15px
+			width: 100%
+			height: 295px
+			background: #fff
+			border-radius: 46.8px
+			box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+			position: relative
+
+		.text
+			box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+			width: calc(100% - 30px)
+			margin: -20px auto 0 auto
+			border-bottom-left-radius: 46.8px
+			border-bottom-right-radius: 46.8px
+			padding: 40px 20px 20px 20px
+			text-align: center
+			background: #fff url(img/pattern.png) no-repeat center
+			background-size: cover
+
+			h3
+				font-family: Affogato-Medium
+				font-size: 22px
+				line-height: 1.09
+				color: #000000
+				margin: 0 0 10px 0
+
+			.price
+				font-family: Affogato-Black
+				font-size: 28px
+				color: #5e5995
+
+		.browse-btn
+			font-family: Affogato-Black
+			font-size: 19px
+			letter-spacing: -0.9px
+			text-align: center
+			color: #ffffff
+			display: block
+			border-radius: 20px
+			box-shadow: 12px 8px 25px 0 rgba(156, 203, 73, 0.4)
+			background-color: #85c59c
+			height: 50px
+			line-height: 50px
+			text-decoration: none
+			width: 235px
+			margin: 30px auto
+			text-transform: uppercase
+
+		&.left
+			margin-top: 10%
+			position: relative
+
+			@media (min-width: 1599px)
+				right: -6%
+
+			@media (max-width: 1499px)
+				right: -5%
+
+			@media (max-width: 1399px)
+				right: 0
+				margin-top: 15%
+			@media (max-width: 767px)
+				right: 0
+				margin-top: 0
+
+			.arr-right
+				display: none
+				@media (max-width: 767px)
+					bottom: -50px
+					left: 0
+					right: 0
+					margin: 0 auto
+					text-align: center
+					display: block
+
+		&.right
+			margin-top: 10%
+			position: relative
+
+			@media (min-width: 1599px)
+				left: -6%
+
+			@media (max-width: 1499px)
+				left: -5%
+
+			@media (max-width: 1399px)
+				left: -50px
+				margin-top: 15%
+
+			@media (max-width: 767px)
+				left: 0
+				margin-top: 0
+
+
+	.main-thumb
+		width: 400px
+		float: left
+		position: relative
+
+		&:after
+			content: " "
+			display: block
+			position: absolute
+			top: 40px
+			right: -112px
+			width: 474px
+			height: 440px
+			background: url(img/mainbg.svg) no-repeat center
+			background-size: contain
+			z-index: 0
+			@media (max-width: 1200px)
+				width: 350px
+				height: 320px
+
+		@media (max-width: 1200px)
+			max-width: 300px
+		@media (max-width: 840px)
+			max-width: 250px
+		@media (max-width: 767px)
+			max-width: 100%
+			width: 95%
+			padding-bottom: 60px
+			margin-bottom: 85px
+
+
+		.age
+			background: #7ec297 url(img/oval.svg) no-repeat center
+			background-size: cover
+			font-family: Affogato-Black
+			font-size: 30px
+			text-align: center
+			color: #ffffff
+			border-radius: 150px
+			width: 150px
+			height: 150px
+			display: flex
+			align-items: center
+			justify-content: center
+			position: absolute
+			top: -20px
+			right: -50px
+			text-transform: uppercase
+			z-index: 3
+			@media (max-width: 767px)
+				right: -35px
+
+			span
+				font-family: Affogato-Black
+				font-size: 16px
+
+		.arr-left
+			left: -50%
+			top: 50px
+			@media (max-width: 1024px)
+				max-width: 120px
+			@media (max-width: 767px)
+				display: none
+
+		.arr-right
+			right: -50%
+			top: 50px
+			@media (max-width: 1024px)
+				max-width: 93px
+			@media (max-width: 767px)
+				bottom: -50px
+				left: 0
+				right: 0
+				margin: 0 auto
+				top: initial
+		.arr-left,
+		.arr-right
+			position: absolute
+
+		.img
+			display: block
+			position: relative
+			z-index: 2
+			border-radius: 100%
+			box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31)
+			border: solid 16px #ffffff
