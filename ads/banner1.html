@@ -1,13 +1,401 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" type="text/css" href="banner.css">
+<style type="text/css">
+	@font-face {
+    font-family: "Affogato-Black";
+    src: url("fonts/Affogato-Black.eot");
+    src: url("fonts/Affogato-Black.eot?#iefix") format("embedded-opentype"), url("fonts/Affogato-Black.woff") format("woff"), url("fonts/Affogato-Black.woff2") format("woff2"), url("fonts/Affogato-Black.ttf") format("truetype"), url("fonts/Affogato-Black.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Affogato-Medium";
+    src: url("fonts/Affogato-Medium.eot");
+    src: url("fonts/Affogato-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/Affogato-Medium.woff") format("woff"), url("fonts/Affogato-Medium.woff2") format("woff2"), url("fonts/Affogato-Medium.ttf") format("truetype"), url("fonts/Affogato-Medium.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.banner-1 {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.banner-1 .p-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .banner-1 .p-row {
+        display: block;
+    }
+}
+
+.banner-1 * {
+    box-sizing: border-box;
+}
+
+.banner-1 img {
+    max-width: 100%;
+}
+
+.banner-1 h2 {
+    font-family: Affogato-Black;
+    font-size: 38px;
+    color: #5e5995;
+    text-transform: uppercase;
+    margin: 47px 0 19px 100px;
+}
+
+@media (max-width: 767px) {
+    .banner-1 h2 {
+        margin: 20px 0;
+    }
+}
+
+.banner-1 .side {
+    width: 290px;
+    float: left;
+}
+
+@media (max-width: 1024px) {
+    .banner-1 .side {
+        width: 200px;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner-1 .side {
+        float: none;
+        width: 95%;
+        padding-bottom: 40px;
+    }
+}
+
+.banner-1 .side .prod-h {
+    font-family: Affogato-Black;
+    font-size: 24px;
+    text-align: center;
+    color: #000000;
+    margin: 0 0 44px 0;
+    text-transform: uppercase;
+}
+
+.banner-1 .side .age {
+    background: #7ec297 url(https://drive.google.com/uc?id=1nxnaiAosSG_nLhDPoU2Nu2PoXFkrwW1N) no-repeat center;
+    background-size: cover;
+    font-family: Affogato-Black;
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 150px;
+    width: 115px;
+    height: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -55px;
+    right: -55px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .banner-1 .side .age {
+        top: -40px;
+        right: -40px;
+        width: 80px;
+        height: 80px;
+        font-size: 22px;
+    }
+}
+
+.banner-1 .side .age span {
+    font-family: Affogato-Black;
+    font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+    .banner-1 .side .age span {
+        font-size: 11px;
+    }
+}
+
+.banner-1 .side .thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 100%;
+    height: 295px;
+    background: #fff;
+    border-radius: 46.8px;
+    box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31);
+    position: relative;
+}
+
+.banner-1 .side .text {
+    box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31);
+    width: calc(100% - 30px);
+    margin: -20px auto 0 auto;
+    border-bottom-left-radius: 46.8px;
+    border-bottom-right-radius: 46.8px;
+    padding: 40px 20px 20px 20px;
+    text-align: center;
+    background: #fff url(https://drive.google.com/uc?id=1Ap5EEqa2zW_eFllo6d-WozGFInifX3-E) no-repeat center;
+    background-size: cover;
+}
+
+.banner-1 .side .text h3 {
+    font-family: Affogato-Medium;
+    font-size: 22px;
+    line-height: 1.09;
+    color: #000000;
+    margin: 0 0 10px 0;
+}
+
+.banner-1 .side .text .price {
+    font-family: Affogato-Black;
+    font-size: 28px;
+    color: #5e5995;
+}
+
+.banner-1 .side .browse-btn {
+    font-family: Affogato-Black;
+    font-size: 19px;
+    letter-spacing: -0.9px;
+    text-align: center;
+    color: #ffffff;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 12px 8px 25px 0 rgba(156, 203, 73, 0.4);
+    background-color: #85c59c;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    width: 235px;
+    margin: 30px auto;
+    text-transform: uppercase;
+}
+
+.banner-1 .side.left {
+    margin-top: 10%;
+    position: relative;
+}
+
+@media (min-width: 1599px) {
+    .banner-1 .side.left {
+        right: -6%;
+    }
+}
+
+@media (max-width: 1499px) {
+    .banner-1 .side.left {
+        right: -5%;
+    }
+}
+
+@media (max-width: 1399px) {
+    .banner-1 .side.left {
+        right: 0;
+        margin-top: 15%;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner-1 .side.left {
+        right: 0;
+        margin-top: 0;
+    }
+}
+
+.banner-1 .side.left .arr-right {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .banner-1 .side.left .arr-right {
+        bottom: -50px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+}
+
+.banner-1 .side.right {
+    margin-top: 10%;
+    position: relative;
+}
+
+@media (min-width: 1599px) {
+    .banner-1 .side.right {
+        left: -6%;
+    }
+}
+
+@media (max-width: 1499px) {
+    .banner-1 .side.right {
+        left: -5%;
+    }
+}
+
+@media (max-width: 1399px) {
+    .banner-1 .side.right {
+        left: -50px;
+        margin-top: 15%;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner-1 .side.right {
+        left: 0;
+        margin-top: 0;
+    }
+}
+
+.banner-1 .main-thumb {
+    width: 400px;
+    float: left;
+    position: relative;
+}
+
+.banner-1 .main-thumb:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: -112px;
+    width: 474px;
+    height: 440px;
+    background: url(https://drive.google.com/uc?id=1nmZa29J8hs322rFTBNRIXF8l1DFtC_k2) no-repeat center;
+    background-size: contain;
+    z-index: 0;
+}
+
+@media (max-width: 1200px) {
+    .banner-1 .main-thumb:after {
+        width: 350px;
+        height: 320px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .banner-1 .main-thumb {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 840px) {
+    .banner-1 .main-thumb {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner-1 .main-thumb {
+        max-width: 100%;
+        width: 95%;
+        padding-bottom: 60px;
+        margin-bottom: 85px;
+    }
+}
+
+.banner-1 .main-thumb .age {
+    background: #7ec297 url(https://drive.google.com/uc?id=1nxnaiAosSG_nLhDPoU2Nu2PoXFkrwW1N) no-repeat center;
+    background-size: cover;
+    font-family: Affogato-Black;
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 150px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -20px;
+    right: -50px;
+    text-transform: uppercase;
+    z-index: 3;
+}
+
+@media (max-width: 767px) {
+    .banner-1 .main-thumb .age {
+        right: -35px;
+    }
+}
+
+.banner-1 .main-thumb .age span {
+    font-family: Affogato-Black;
+    font-size: 16px;
+}
+
+.banner-1 .main-thumb .arr-left {
+    left: -50%;
+    top: 50px;
+}
+
+@media (max-width: 1024px) {
+    .banner-1 .main-thumb .arr-left {
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner-1 .main-thumb .arr-left {
+        display: none;
+    }
+}
+
+.banner-1 .main-thumb .arr-right {
+    right: -50%;
+    top: 50px;
+}
+
+@media (max-width: 1024px) {
+    .banner-1 .main-thumb .arr-right {
+        max-width: 93px;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner-1 .main-thumb .arr-right {
+        bottom: -50px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: initial;
+    }
+}
+
+.banner-1 .main-thumb .arr-left,
+.banner-1 .main-thumb .arr-right {
+    position: absolute;
+}
+
+.banner-1 .main-thumb .img {
+    display: block;
+    position: relative;
+    z-index: 2;
+    border-radius: 100%;
+    box-shadow: 0 22px 54px 0 rgba(77, 95, 111, 0.31);
+    border: solid 16px #ffffff;
+}
+</style>
 <div class="banner-1">
 	<h2>Recommended Age</h2>
 	<div class="p-row">
 		<div class="left side">
 			<h3 class="prod-h">Younger Kids</h3>
 			<div class="thumb">
-				<img src="img/bp1.png">
+				<img src="https://drive.google.com/uc?id=11X7v4YI4884YeF2IKMxLd4MUNdunlkUV">
 				<div class="age">
 					<div>
 						2-3<br>
@@ -21,13 +409,13 @@
 			</div>
 
 			<div><a href="#" class="browse-btn">Browse Other Designs</a></div>
-			<div class="arr-right"><img src="img/arr-right.svg"></div>
+			<div class="arr-right"><img src="https://drive.google.com/uc?id=1_mSVjxwj6FmQOfu1v_3a64h9vvaiLfiH"></div>
 		</div>
 		<div class="main-thumb">
-			<div class="arr-left"><img src="img/arr-left.svg"></div>
-			<div class="arr-right"><img src="img/arr-right.svg"></div>
+			<div class="arr-left"><img src="https://drive.google.com/uc?id=1JcKnyhN8BYO21sm_0h1W37_JnUzlslXy"></div>
+			<div class="arr-right"><img src="https://drive.google.com/uc?id=1_mSVjxwj6FmQOfu1v_3a64h9vvaiLfiH"></div>
 			<div class="img">
-				<img src="img/main.png">
+				<img src="https://drive.google.com/uc?id=1qY06KwDxMqs2g5Znkm-PHtdk11F3IxhZ">
 			</div>
 			<div class="age">
 				<div>
@@ -39,7 +427,7 @@
 		<div class="right side">
 			<h3 class="prod-h">older children</h3>
 			<div class="thumb">
-				<img src="img/bp2.png">
+				<img src="https://drive.google.com/uc?id=1DWwX-PI881fyHHqZmO4O9wbiYVoNnskg">
 				<div class="age">
 					<div>
 						6-7<br>
